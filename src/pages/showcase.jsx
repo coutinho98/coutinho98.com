@@ -1,18 +1,19 @@
 import Item from '../components/Item'
 import shadys from '../assets/shadysdownloader.png'
 import shadysviewer from '../assets/shadys.png'
+import sensei from '../assets/sensei.png'
 import { href } from 'react-router'
 
 const Showcase = () => {
     return (
         <main className='grip gap-12'>
             <Item
-                name="Shadys Media Donwloader"
-                description="A desktop application to download your videos quickly without having ads pop up all the time."
-                imageSrc={shadys}
-                tags={["python", "yt-dlp api", "desktop application", "video/audio manipulation"]}
+                name="Sensei"
+                description="A math and physics exercise list generator with randomized values on every generation. From middle school to college entrance exams, ready to print as PDF."
+                imageSrc={sensei}
+                tags={["react", "typescript", "tailwind", "prisma", "nestjs"]}
                 links={[
-                    { children: "github", href: "https://github.com/coutinho98/ShadysDownloader" },
+                    { children: "website", href: "https://sensei.app.br" },
                 ]}
             />
             <Item
@@ -27,6 +28,15 @@ const Showcase = () => {
                     {
                         children: "website", href: "https://viewer-ruddy.vercel.app/"
                     },
+                ]}
+            />
+            <Item
+                name="Shadys Media Donwloader"
+                description="A desktop application to download your videos quickly without having ads pop up all the time."
+                imageSrc={shadys}
+                tags={["python", "yt-dlp api", "desktop application", "video/audio manipulation"]}
+                links={[
+                    { children: "github", href: "https://github.com/coutinho98/ShadysDownloader" },
                 ]}
             />
         </main>
